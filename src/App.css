@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  ol {
+    text-align: center;
+    list-style-position: inside;
+    font-size: 3vw; 
+    padding: 0; 
+  }
+
+  .delete-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2vw;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 요소들을 중앙 정렬합니다 */
+    gap: 20px; /* 요소들 사이의 간격을 설정합니다 */
+  }
+  
+  li {
+    margin: 2vh 0;
+    list-style: none;
+  }
+  
+  input[type="checkbox"] {
+    transform: scale(2.5);
+  }
+  
+  input[type="text"] {
+    font-size: 1.5vw; 
+    padding: 1vh;
+    width: 150%; 
+    max-width: 500px;
+  }
+  
+  @media (max-width: 600px) {
+    ol, input[type="text"] {
+      font-size: 5vw;
+    }
+  }
+  
